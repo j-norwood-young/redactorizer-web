@@ -1,11 +1,134 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout
+  title="Redactorizer — Safely redact documents and images on your Mac"
+  description="Redact documents and images locally on your Mac. Built for investigative journalists and whistleblowers. No data leaves your computer. PDF and image support."
+  current="home"
+>
+  <article>
+    <!-- Hero -->
+    <section class="relative overflow-hidden border-b border-border">
+      <div class="absolute inset-0 bg-gradient-to-b from-accent-muted/30 via-transparent to-transparent" aria-hidden="true" />
+      <div class="relative mx-auto max-w-4xl px-4 py-20 sm:px-6 sm:py-28">
+        <h1 class="font-display text-4xl font-normal tracking-tight text-fg sm:text-5xl lg:text-6xl">
+          Redact safely.<br />
+          <span class="italic text-accent">Nothing leaves your Mac.</span>
+        </h1>
+        <p class="mt-6 max-w-2xl text-lg leading-relaxed text-fg-muted">
+          Redactorizer lets you redact documents and images locally—no uploads, no cloud, no trace.
+          Built for investigative journalists and anyone who needs to protect sources and sensitive information.
+        </p>
+        <div class="mt-10 flex flex-wrap gap-4">
+          <a
+            href="https://apps.apple.com/app/redactorizer/id1234567890"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center rounded-xl bg-accent px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-accent/25 transition hover:bg-accent-hover focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-surface"
+          >
+            Get on Mac App Store — $5
+          </a>
+          <a
+            href="https://github.com/redactorizer/redactorizer"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center rounded-xl border border-border-strong bg-surface-elevated px-6 py-3.5 text-sm font-semibold text-fg transition hover:border-border hover:bg-surface-muted focus:outline-none focus:ring-2 focus:ring-fg-subtle focus:ring-offset-2 focus:ring-offset-surface"
+          >
+            Source on GitHub — Free
+          </a>
+          <a
+            href="/contact/"
+            class="inline-flex items-center justify-center rounded-xl border border-accent/40 bg-accent-muted px-6 py-3.5 text-sm font-semibold text-accent transition hover:bg-accent/10 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-surface"
+          >
+            Journalists - Free
+          </a>
+        </div>
+        <p class="mt-4 text-sm text-fg-subtle">
+          Paying supports future development. You can also build from source and run it for free.
+          <strong class="text-fg-muted">Investigative journalists:</strong> contact me and I’ll send you a free copy.
+        </p>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-24">
+      <h2 class="font-display text-3xl font-normal text-fg">Why Redactorizer?</h2>
+      <ul class="mt-10 grid gap-6 sm:grid-cols-1">
+        <li class="group flex gap-5 rounded-2xl border border-border bg-surface-elevated p-6 transition hover:border-border-strong hover:bg-surface-muted/50">
+          <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-accent-muted text-2xl" aria-hidden="true">🔒</span>
+          <div>
+            <h3 class="text-base font-semibold text-fg">100% local</h3>
+            <p class="mt-1 text-sm leading-relaxed text-fg-muted">
+              All redaction happens on your Mac. No data is sent to any server—ever.
+            </p>
+          </div>
+        </li>
+        <li class="group flex gap-5 rounded-2xl border border-border bg-surface-elevated p-6 transition hover:border-border-strong hover:bg-surface-muted/50">
+          <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-accent-muted text-2xl" aria-hidden="true">📄</span>
+          <div>
+            <h3 class="text-base font-semibold text-fg">PDFs and images</h3>
+            <p class="mt-1 text-sm leading-relaxed text-fg-muted">
+              Redact text and areas in PDFs and common image formats.
+            </p>
+          </div>
+        </li>
+        <li class="group flex gap-5 rounded-2xl border border-border bg-surface-elevated p-6 transition hover:border-border-strong hover:bg-surface-muted/50">
+          <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-accent-muted text-2xl" aria-hidden="true">🛡️</span>
+          <div>
+            <h3 class="text-base font-semibold text-fg">Protect sources</h3>
+            <p class="mt-1 text-sm leading-relaxed text-fg-muted">
+              Designed for investigative journalists and whistleblowers who need to share documents without exposing identities or sensitive details.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- CTA -->
+    <section class="border-t border-border bg-surface-elevated">
+      <div class="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-20">
+        <h2 class="font-display text-3xl font-normal text-fg">Get started</h2>
+        <p class="mt-3 max-w-xl text-fg-muted">
+          Download from the Mac App Store for $5 to support development, clone the repo and build from source for free, or—if you’re a journalist—contact me for a free copy.
+        </p>
+        <div class="mt-6 rounded-2xl border border-accent/30 bg-accent-muted/50 p-4 sm:p-5">
+          <p class="text-sm font-medium text-fg">For journalists</p>
+          <p class="mt-1 text-sm text-fg-muted">
+            If you’re an investigative journalist and would like Redactorizer at no cost, get in touch and I’ll send you a free copy—no questions asked.
+          </p>
+          <a
+            href="/contact/"
+            class="mt-3 inline-flex items-center text-sm font-semibold text-accent transition hover:text-accent-hover focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-surface-elevated rounded"
+          >
+            Contact me to request →
+          </a>
+        </div>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a
+            href="https://apps.apple.com/app/redactorizer/id1234567890"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center rounded-xl bg-accent px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-accent-hover focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-surface"
+          >
+            Mac App Store — $5
+          </a>
+          <a
+            href="https://github.com/redactorizer/redactorizer"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center rounded-xl border border-border-strong bg-surface px-6 py-3.5 text-sm font-semibold text-fg transition hover:bg-surface-muted focus:outline-none focus:ring-2 focus:ring-fg-subtle focus:ring-offset-2 focus:ring-offset-surface"
+          >
+            GitHub — Free
+          </a>
+          <a
+            href="/contact/"
+            class="inline-flex items-center justify-center rounded-xl border border-border-strong bg-surface px-6 py-3.5 text-sm font-semibold text-fg transition hover:bg-surface-muted focus:outline-none focus:ring-2 focus:ring-fg-subtle focus:ring-offset-2 focus:ring-offset-surface"
+          >
+            Journalists: request free
+          </a>
+        </div>
+      </div>
+    </section>
+  </article>
 </Layout>

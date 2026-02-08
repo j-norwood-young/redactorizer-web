@@ -1,0 +1,44 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout
+  title="Documentation — Redactorizer"
+  description="Redactorizer documentation: how to install, use, and build from source."
+  current="docs"
+>
+  <article class="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-20">
+    <header class="mb-12">
+      <h1 class="font-display text-3xl font-normal tracking-tight text-fg sm:text-4xl">
+        Documentation
+      </h1>
+      <p class="mt-3 text-lg text-fg-muted">
+        Guides and reference for installing, using, and building Redactorizer.
+      </p>
+    </header>
+
+    <div class="space-y-12">
+      <section class="rounded-2xl border border-border bg-surface-elevated p-6 sm:p-8">
+        <h2 class="text-lg font-semibold text-fg">Getting started</h2>
+        <p class="mt-3 text-fg-muted">
+          Documentation is being built here. You can start adding guides for:
+        </p>
+        <ul class="mt-4 list-disc space-y-2 pl-5 text-fg-muted">
+          <li>Installing from the Mac App Store</li>
+          <li>Building from source on GitHub</li>
+          <li>Redacting PDFs and images</li>
+          <li>Best practices for protecting sources</li>
+        </ul>
+      </section>
+
+      <section class="rounded-2xl border border-border bg-surface-elevated p-6 sm:p-8">
+        <h2 class="text-lg font-semibold text-fg">Supported formats</h2>
+        <p class="mt-3 text-fg-muted">Redactorizer currently supports:</p>
+        <ul class="mt-4 list-disc space-y-2 pl-5 text-fg-muted">
+          <li><strong class="text-fg">PDF</strong> — Redact text and areas in PDF documents.</li>
+          <li><strong class="text-fg">Images</strong> — Redact areas in common image formats.</li>
+        </ul>
+      </section>
+    </div>
+  </article>
+</Layout>
