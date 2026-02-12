@@ -6,7 +6,7 @@ import Footer from '../components/Footer.astro';
 interface Props {
   title: string;
   description?: string;
-  current?: 'home' | 'docs' | 'contact';
+  current?: 'home' | 'docs' | 'contact' | 'privacy';
 }
 
 const { title, description = 'Safely redact documents and images on your Mac. Built for investigative journalists and anyone who needs to protect sources.', current } = Astro.props;
