@@ -4,7 +4,7 @@ import Layout from '../../layouts/Layout.astro';
 
 <Layout
   title="Documentation — Redactorizer"
-  description="Redactorizer documentation: how to install, use, and build from source."
+  description="How to use Redactorizer: upload files, choose tools, apply redactions, and export securely."
   current="docs"
 >
   <article class="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-20">
@@ -19,16 +19,75 @@ import Layout from '../../layouts/Layout.astro';
 
     <div class="space-y-12">
       <section class="rounded-2xl border border-border bg-surface-elevated p-6 sm:p-8">
-        <h2 class="text-lg font-semibold text-fg">Getting started</h2>
+        <h2 class="text-lg font-semibold text-fg">Welcome to Redactorizer</h2>
         <p class="mt-3 text-fg-muted">
-          Documentation is being built here. You can start adding guides for:
+          Redactorizer is built for journalists who need to protect people. Redact names of victims and sources, obscure identifying details in documents and photos, or pixelate faces and license plates before publication—so your reporting stays ethical and your subjects stay safe. Redactorizer makes it permanent, professional, and simple.
+        </p>
+      </section>
+
+      <section class="rounded-2xl border border-border bg-surface-elevated p-6 sm:p-8">
+        <h2 class="text-lg font-semibold text-fg">Core Features</h2>
+        <p class="mt-3 text-fg-muted">
+          Redactorizer provides a versatile toolkit to ensure your information stays private:
         </p>
         <ul class="mt-4 list-disc space-y-2 pl-5 text-fg-muted">
-          <li>Installing from the Mac App Store</li>
-          <li>Building from source on GitHub</li>
-          <li>Redacting PDFs and images</li>
-          <li>Best practices for protecting sources</li>
+          <li><strong class="text-fg">Smart Select:</strong> Click and drag to define specific areas for redaction.</li>
+          <li><strong class="text-fg">Multiple Effects:</strong>
+            <ul class="mt-2 list-disc space-y-1 pl-5">
+              <li><strong class="text-fg">Pixelate:</strong> Turns the selection into classic, "8-bit" blocks.</li>
+              <li><strong class="text-fg">Blur:</strong> Softens the area for a more subtle, aesthetic concealment.</li>
+              <li><strong class="text-fg">Solid Fill:</strong> Completely blacks out (or whites out) text or images for total privacy.</li>
+            </ul>
+          </li>
+          <li><strong class="text-fg">Intensity Control:</strong> Use the slider to adjust the strength of your blur or the size of your pixels.</li>
+          <li><strong class="text-fg">OCR Support:</strong> Automatically detects text layers to help you snap-to-redact common sensitive fields.</li>
         </ul>
+      </section>
+
+      <section class="rounded-2xl border border-border bg-surface-elevated p-6 sm:p-8">
+        <h2 class="text-lg font-semibold text-fg">How to Operate Redactorizer</h2>
+
+        <div class="mt-6 space-y-6">
+          <div>
+            <h3 class="font-semibold text-fg">1. Upload Your File</h3>
+            <p class="mt-2 text-fg-muted">
+              Simply drag and drop your file (PDF, PNG, or JPG) into the main workspace. You can also click the "Import" button to browse your device.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-fg">2. Choose Your Tool</h3>
+            <p class="mt-2 text-fg-muted">
+              On the left-hand sidebar, select your preferred redaction style:
+            </p>
+            <ul class="mt-2 list-disc space-y-1 pl-5 text-fg-muted">
+              <li><strong class="text-fg">Rectangle Tool:</strong> Best for standard text lines and documents.</li>
+              <li><strong class="text-fg">Brush Tool:</strong> Best for irregular shapes or faces in photos.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-fg">3. Apply and Adjust</h3>
+            <p class="mt-2 text-fg-muted">
+              Draw over the sensitive area. Once the redaction box appears:
+            </p>
+            <ul class="mt-2 list-disc space-y-1 pl-5 text-fg-muted">
+              <li>Use the handles to resize or move the area.</li>
+              <li>Adjust the Strength Slider if you need a heavier blur or larger pixels.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-fg">4. Finalize and Export</h3>
+            <p class="mt-2 text-fg-muted">
+              Click the "Apply Redaction" button to flatten the layers. Once you are satisfied:
+            </p>
+            <ul class="mt-2 list-disc space-y-1 pl-5 text-fg-muted">
+              <li>Select "Export" from the top menu.</li>
+              <li>Choose your format: Secure PDF (standard for docs) or PNG/JPG (standard for images).</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section class="rounded-2xl border border-border bg-surface-elevated p-6 sm:p-8">
@@ -36,7 +95,7 @@ import Layout from '../../layouts/Layout.astro';
         <p class="mt-3 text-fg-muted">Redactorizer currently supports:</p>
         <ul class="mt-4 list-disc space-y-2 pl-5 text-fg-muted">
           <li><strong class="text-fg">PDF</strong> — Redact text and areas in PDF documents.</li>
-          <li><strong class="text-fg">Images</strong> — Redact areas in common image formats.</li>
+          <li><strong class="text-fg">PNG & JPG</strong> — Redact areas in common image formats.</li>
         </ul>
       </section>
     </div>
