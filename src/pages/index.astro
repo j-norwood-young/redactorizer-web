@@ -10,19 +10,21 @@ import Layout from '../layouts/Layout.astro';
   <article>
     <!-- Hero -->
     <section class="relative overflow-hidden border-b border-border">
-      <div class="absolute inset-0 bg-gradient-to-b from-accent-muted/30 via-transparent to-transparent" aria-hidden="true" />
-      <div class="relative mx-auto max-w-4xl px-4 py-20 sm:px-6 sm:py-28">
-        <h1 class="font-display text-4xl font-normal tracking-tight text-fg sm:text-5xl lg:text-6xl">
-          Redact safely.<br />
-          <span class="italic text-accent">Nothing leaves your Mac.</span>
-        </h1>
-        <p class="mt-6 max-w-2xl text-lg leading-relaxed text-fg-muted">
-          Redactorizer lets you redact documents and images locally—no uploads, no cloud, no trace.
-          Built for investigative journalists and anyone who needs to protect sources and sensitive information.
-        </p>
-        <div class="mt-10 flex flex-wrap gap-4">
+      <div class="absolute inset-0 bg-linear-to-b from-accent-muted/30 via-transparent to-transparent" aria-hidden="true" />
+      <div class="relative mx-auto max-w-5xl px-4 py-20 sm:px-6 sm:py-28">
+        <div class="space-y-12">
+          <div>
+            <h1 class="font-display text-4xl font-normal tracking-tight text-fg sm:text-5xl lg:text-6xl">
+              Redact safely.<br />
+              <span class="italic text-accent">Nothing leaves your Mac.</span>
+            </h1>
+            <p class="mt-6 max-w-2xl text-lg leading-relaxed text-fg-muted">
+              Redactorizer lets you redact documents and images locally—no uploads, no cloud, no trace.
+              Built for investigative journalists and anyone who needs to protect sources and sensitive information.
+            </p>
+            <div class="mt-10 flex flex-wrap gap-4">
           <a
-            href="https://apps.apple.com/app/redactorizer/id1234567890"
+            href="https://apps.apple.com/nl/app/redactorizer/id6758915996"
             target="_blank"
             rel="noopener noreferrer"
             class="inline-flex items-center justify-center rounded-xl bg-accent px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-accent/25 transition hover:bg-accent-hover focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-surface"
@@ -30,7 +32,7 @@ import Layout from '../layouts/Layout.astro';
             Get on Mac App Store — $5
           </a>
           <a
-            href="https://github.com/redactorizer/redactorizer"
+            href="https://github.com/j-norwood-young/redactorizer"
             target="_blank"
             rel="noopener noreferrer"
             class="inline-flex items-center justify-center rounded-xl border border-border-strong bg-surface-elevated px-6 py-3.5 text-sm font-semibold text-fg transition hover:border-border hover:bg-surface-muted focus:outline-none focus:ring-2 focus:ring-fg-subtle focus:ring-offset-2 focus:ring-offset-surface"
@@ -43,11 +45,25 @@ import Layout from '../layouts/Layout.astro';
           >
             Journalists - Free
           </a>
+            </div>
+            <p class="mt-4 text-sm text-fg-subtle">
+              Paying supports future development. You can also build from source and run it for free.
+              <strong class="text-fg-muted">Investigative journalists:</strong> contact me and I’ll send you a free copy.
+            </p>
+          </div>
+          <div class="relative -mx-4 sm:mx-0">
+            <div
+              class="pointer-events-none absolute inset-0 rounded-[2rem] border border-border/70 bg-linear-to-b from-accent-muted/15 via-transparent to-background/80 shadow-[0_40px_120px_rgba(0,0,0,0.45)]"
+              aria-hidden="true"
+            />
+            <img
+              src="/redactorizer-demo1.webp"
+              alt="Redactorizer redaction workflow preview"
+              class="relative z-[1] w-full rounded-[1.75rem] border border-border/60 bg-surface-elevated object-contain"
+              loading="lazy"
+            />
+          </div>
         </div>
-        <p class="mt-4 text-sm text-fg-subtle">
-          Paying supports future development. You can also build from source and run it for free.
-          <strong class="text-fg-muted">Investigative journalists:</strong> contact me and I’ll send you a free copy.
-        </p>
       </div>
     </section>
 
@@ -106,7 +122,7 @@ import Layout from '../layouts/Layout.astro';
         </div>
         <div class="mt-8 flex flex-wrap gap-4">
           <a
-            href="https://apps.apple.com/app/redactorizer/id1234567890"
+            href="Redactorizer"
             target="_blank"
             rel="noopener noreferrer"
             class="inline-flex items-center justify-center rounded-xl bg-accent px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-accent-hover focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-surface"
@@ -114,7 +130,7 @@ import Layout from '../layouts/Layout.astro';
             Mac App Store — $5
           </a>
           <a
-            href="https://github.com/redactorizer/redactorizer"
+            href="https://github.com/j-norwood-young/redactorizer"
             target="_blank"
             rel="noopener noreferrer"
             class="inline-flex items-center justify-center rounded-xl border border-border-strong bg-surface px-6 py-3.5 text-sm font-semibold text-fg transition hover:bg-surface-muted focus:outline-none focus:ring-2 focus:ring-fg-subtle focus:ring-offset-2 focus:ring-offset-surface"
